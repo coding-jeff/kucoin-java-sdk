@@ -1,0 +1,21 @@
+
+package com.kucoin.sdk.rest.request;
+
+import java.math.BigDecimal;
+import lombok.Data;
+
+@Data
+public class BorrowLoanApiReq {
+
+    private String symbol;
+
+    private String currency;
+
+    private BigDecimal size;
+
+    private BigDecimal maxRate;
+
+    private String period;
+
+    private String borrowStrategy;
+}
